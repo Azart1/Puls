@@ -39,4 +39,8 @@
         margin: 0;
         margin-top: 15px;
     }
+    &__description-link {
+        color: $red;
+        text-decoration: underline;
+    }
 }

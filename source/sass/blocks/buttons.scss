@@ -11,10 +11,11 @@
   text-transform: uppercase;
   color: $white;
   border: none;
-  outline: none;
+  cursor: pointer;
   &:hover{
     transition-duration: 0.4s;
       background-color:$red-light;
+      box-shadow: 5px 5px 11px $black-light;
   }
   &_header {
       margin-top: 10px;
@@ -32,5 +33,11 @@
     font-size: 16px;
     line-height: 25px;
     margin-top: 11px;
+  }
+  &_catalog-item {
+    width: 135px;
+    height: 44px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
