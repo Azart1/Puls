@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>   
     <link href="css/style.css" rel="stylesheet">
     <title>Puls</title>
 </head>
 <body class="page">
-    <div class="promo">
+    <section class="promo">        
         <div class="container">
             <header class="header">
                 <a  href="#" class="header__logo">
@@ -20,24 +21,24 @@
                 </div>
                 <div class="header__contacts">
                     <a href="tel:+74999228974" class="header__phone">+7 (499) 922-89-74</a>
-                    <button class="button">заказать звонок</button>
+                    <button class="button button_header">заказать звонок</button>
                 </div>
             </header>
             <div class="promo__wrapper">
                 <h1 class="promo__title">Подбор пульсометра</h1>
                 <h2 class="promo__subtitle">С учётом вашего уровня подготовки</h2>
-                <div class="promo__advantages">
-                    <div class="promo__advantage">
-                        <img src="img/icon-time.svg" alt="" class="promo__advantage-img" width="42" height="46">
-                        <span class="promo__advantage-description">Время подбора: 10 минут</span>
+                <div class="promo__priorities">
+                    <div class="promo__prioritie">
+                        <img src="img/icon-time.svg" alt="" class="promo__prioritie-img" width="42" height="46">
+                        <span class="promo__prioritie-description">Время подбора: 10 минут</span>
                     </div>
-                    <div class="promo__advantage">
-                        <img src="img/icon-cart.svg" alt="" class="promo__advantage-img" width="44" height="45">
-                        <span class="promo__advantage-description">Бесплатная доставка</span>
+                    <div class="promo__prioritie">
+                        <img src="img/icon-cart.svg" alt="" class="promo__prioritie-img" width="44" height="45">
+                        <span class="promo__prioritie-description">Бесплатная доставка</span>
                     </div>
-                    <div class="promo__advantage">
-                        <img src="img/icon-messages.svg" alt="" class="promo__advantage-img" width="45" height="42">
-                        <span class="promo__advantage-description">Ответим на все вопросы</span>
+                    <div class="promo__prioritie">
+                        <img src="img/icon-messages.svg" alt="" class="promo__prioritie-img" width="45" height="42">
+                        <span class="promo__prioritie-description">Ответим на все вопросы</span>
                     </div>
                 </div>
                 <button class="button button_main">Заказать консультацию</button>
@@ -46,7 +47,70 @@
                     <a class="promo__link" href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
                 </div>
         </div>
-    </div>
-    
+    </section>
+    <section class="advantages">
+        <div class="container">
+            <h2 class="advantages__title">Наши преимущества</h2>
+            <div class="advantages__list">
+                <div class="advantages__item">
+                    <img src="img/icon_cup.svg" alt="" width="70" height="70">
+                    <h3 class="advantages__item-title">Делимся опытом</h3>
+                    <p class="advantages__description">Наши сотрудники всегда готовы поделиться своим опытом,
+                         так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</p>
+                </div>
+                <div class="advantages__item">
+                    <img src="img/icon_heart.svg" alt="" width="70" height="70">
+                    <h3 class="advantages__item-title">Заботимся о здоровье</h3>
+                    <p class="advantages__description">Мы работаем для того, 
+                        чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</p>
+                </div>
+                <div class="advantages__item">
+                    <img src="img/icon_shoe.svg" alt="" width="70" height="70">
+                    <h3 class="advantages__item-title">Учим бегать</h3>
+                    <p class="advantages__description">Помогаем с обучением правильной технике бега! Дружим с крупнейшей
+                         школой бега в России - <a href="#">I LOVE RUNNING</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="consult">
+        <div class="container">            
+            <h2 class="consult__title">Получите бесплатную консультацию по подбору пульсометра</h2>
+            <p class="consult__text">Просто заполните форму заявки и мы перезвоним вам в течении 10 минут</p>
+            <form class="consult__form form" action="#" method="get" >
+                <fieldset class="form__form-group">
+                    <label class="form__label" for="name">
+                        <input type="text" class="form__input" placeholder="Ваше имя" id="name" required>
+                    </label>
+                    <label class="form__label" for="tel">
+                        <input type="tel" class="form__input" placeholder="Ваш телефон" id="number" required>
+                    </label>
+                    <label class="form__label" for="e-mail">
+                        <input type="e-mail" class="form__input" placeholder="Ваш E-mail" id="e-mail" required>
+                    </label>
+                    <button  class="button button_form">Заказать консультацию</button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <section class="sliders">
+        <div class="container">
+            <div class="sliders__inner">
+                <div class="sliders__element">
+                    <img class="sliders__img" src="img/slide-3.jpg" alt="Вариант пульсометра" width="750" height="580">
+                </div>
+                <div class="sliders__element">
+                    <img class="sliders__img" src="img/slide-1.jpg" alt="Вариант пульсометра" width="750" height="527">
+                </div>
+                <div class="sliders__element">
+                    <img class="sliders__img" src="img/slide-2.jpg" alt="Вариант пульсометра" width="750" height="422">
+                </div>
+              </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

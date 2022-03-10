@@ -97,7 +97,7 @@ input[type=radio].visually-hidden {
   flex-direction: column;
   align-items: flex-end;
 }
-.promo__advantages {
+.promo__priorities {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -105,14 +105,14 @@ input[type=radio].visually-hidden {
   margin-top: 60px;
   width: 425px;
 }
-.promo__advantage {
+.promo__prioritie {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
   width: 110px;
 }
-.promo__advantage-description {
+.promo__prioritie-description {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -197,11 +197,233 @@ input[type=radio].visually-hidden {
   border: none;
   outline: none;
 }
+.button:hover {
+  transition-duration: 0.4s;
+  background-color: #e06f3b;
+}
+.button_header {
+  margin-top: 10px;
+}
 .button_main {
   width: 303px;
   height: 54px;
   font-size: 16px;
   line-height: 25px;
   margin-top: 67px;
+}
+.button_form {
+  width: 303px;
+  height: 54px;
+  font-size: 16px;
+  line-height: 25px;
+  margin-top: 11px;
+}
+
+.advantages {
+  min-height: 473px;
+  background-color: #F6F6F6;
+  padding: 70px 0 65px 0;
+}
+.advantages__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #0D0D0D;
+  text-transform: uppercase;
+}
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.advantages__item {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.advantages__item-title {
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: 700;
+  margin: 0;
+  margin-top: 15px;
+}
+.advantages__description {
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.consult {
+  min-height: 680px;
+  background-image: url("../img/bg-consult.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0 108px 0;
+}
+.consult__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  width: 800px;
+  margin: 0;
+}
+.consult__text {
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  width: 426px;
+  margin: 0;
+  margin-top: 8px;
+}
+
+.form__form-group {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 0;
+  margin-top: 36px;
+  width: 303px;
+}
+.form__input {
+  height: 54px;
+  border-radius: 5px;
+  margin-top: 11px;
+  padding: 5px 15px;
+  width: 100%;
+  border: none;
+  font-size: 14px;
+  color: #4B4B4B;
+}
+
+.sliders {
+  padding: 81px 0 81px 0;
+}
+.sliders__inner {
+  width: 750px;
+  margin: 0 auto;
+}
+
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+[dir=rtl] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+.slick-prev {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 32%;
+  transform: translateY(50%);
+  left: -105px;
+}
+.slick-prev img {
+  width: 31px;
+  height: 50px;
+}
+
+.slick-next {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 32%;
+  transform: translateY(50%);
+  right: -105px;
+}
+.slick-next img {
+  width: 31px;
+  height: 50px;
 }
 /*# sourceMappingURL=style.css.map */

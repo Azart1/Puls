@@ -32,7 +32,7 @@
     flex-direction: column;
     align-items: flex-end;
   }
-  &__advantages {
+  &__priorities {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -40,14 +40,14 @@
     margin-top: 60px;
     width: 425px;
   }
-  &__advantage {
+  &__prioritie {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
     width: 110px;
   }
-  &__advantage-description {
+  &__prioritie-description {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;

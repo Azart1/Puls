@@ -1,0 +1,25 @@
+.consult {
+    min-height: 680px;
+    background-image: url("../img/bg-consult.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    padding: 100px 0 108px 0;
+    &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    text-transform: uppercase;
+    color: $white;
+    width: 800px;
+    margin: 0;
+    }
+    &__text {        
+    font-size: 20px;
+    line-height: 30px;
+    color: $white;
+    width: 426px;
+    margin: 0;
+    margin-top: 8px;
+    }
+}

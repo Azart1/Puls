@@ -12,11 +12,25 @@
   color: $white;
   border: none;
   outline: none;
+  &:hover{
+    transition-duration: 0.4s;
+      background-color:$red-light;
+  }
+  &_header {
+      margin-top: 10px;
+  }
   &_main {
     width: 303px;
     height: 54px;
     font-size: 16px;
     line-height: 25px;
     margin-top: 67px;
+  }
+  &_form {
+    width: 303px;
+    height: 54px;
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 11px;
   }
 }
