@@ -5,7 +5,7 @@ $(document).ready(function(){
         speed: 1200,
         slidesToShow: 1,
         adaptiveHeight: false,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 6000,
         prevArrow:'<button type="button" class="slick-prev"><img src="img/icon_arrow-left.svg"></button>',
         nextArrow:'<button type="button" class="slick-next"><img src="img/icon_arrow-right.svg"></button>',
@@ -19,14 +19,14 @@ $(document).ready(function(){
               }
             },
             {
-              breakpoint: 600,
+              breakpoint: 768,
               settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToShow:1,
+                slidesToScroll: 1
               }
             },
             {
-              breakpoint: 480,
+              breakpoint: 450,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -54,4 +54,20 @@ $(document).ready(function(){
 
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__back');
+
+    //modal
+
+    $('[data-modal=consult]').on('click', function() {
+      $('.overlay, #consult').fadeIn('slow');
+    });
+    $('.modal__close').on('click', function() {
+      $('.overlay, #consult, #order, #thanks').fadeOut('slow');
+    });
+
+    $('.button_catalog-item').each(function(i) {
+      $(this).on('click', function() {
+        $('#order .modal__descr').text($('.catalog-item__title').eq(i).text());   
+        $('.overlay, #order').fadeIn('slow');
+      })
+    })
   });

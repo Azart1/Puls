@@ -6,7 +6,7 @@
     background-size: cover;
     position: relative;
     &__info {
-        width: 460px;
+        max-width: 460px;
         min-height: 270px;
         padding: 50px 20px 56px 20px;
         background-color:$red;     
@@ -36,6 +36,7 @@
     }
     &__social-list {
         display: flex;
+        flex-wrap: wrap;
         padding: 0;
         list-style: none;
         width: 212px;

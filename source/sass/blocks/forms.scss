@@ -1,5 +1,4 @@
-.form {
-    
+.form {    
     &__form-group {
         display: flex;
         flex-direction: column;
@@ -14,6 +13,9 @@
         @media (max-width: $mobile-width-only) {
           min-width: auto;
           width: 100%;
+        }
+        &_mt10 {
+          margin-top: 10px;
         }
     }
     &__input {

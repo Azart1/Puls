@@ -5,6 +5,9 @@
   background-size: cover;
   min-height: 650px;
   padding: 21px 0 93px 0;
+  @media (max-width: $mobile-width-only) {
+    padding: 21px 0 0 0;
+  }
   &__title {
     font-style: normal;
     font-weight: 700;
@@ -20,6 +23,7 @@
     }
     @media (max-width: $mobile-width-only) {
       font-size: 22px;
+      line-height: 26px;
     }
   }
   &__subtitle {
@@ -60,7 +64,7 @@
     margin: 0;
     margin-top: 60px;
     @media (max-width: $mobile-width-only) {
-      flex-direction: column;
+      flex-direction: row;
       margin-top: 20px;
     }
   }
@@ -71,6 +75,9 @@
     align-items: center;
     width: 110px;
     margin-bottom: 30px;
+    @media (max-width: $mobile-width-only) {
+      width: 80px;
+    }
   }
   &__prioritie-description {
     font-style: normal;
@@ -80,6 +87,9 @@
     text-align: center;
     color: $white;
     margin-top: 20px;
+    @media (max-width: $mobile-width-only) {
+      font-size: 12px;
+    }
   }
   &__text {
     font-weight: 500;
