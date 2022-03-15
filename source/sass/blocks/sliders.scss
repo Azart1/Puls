@@ -4,4 +4,7 @@
         width: 750px;
         margin: 0 auto;
     }
+    @media (max-width: $tablet-width) {        
+       display: none;
+  }
 }
