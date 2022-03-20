@@ -49,4 +49,13 @@
       margin-top: 20px;
     }
     }
+    .error {
+        border: 1px solid $red;
+        margin-bottom: 13px;
+    }
+    label.error {
+        border:none;
+        margin-top: 10px;
+        color:$white;
+    }
 }

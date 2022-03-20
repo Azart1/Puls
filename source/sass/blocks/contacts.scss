@@ -44,6 +44,11 @@
         margin: 0 auto;
         margin-top: 36px;
     }
+    &__iframe {
+        width: 100%;
+        height:630px;
+        border:none;
+    }
     &__img {
         &:hover {
             transition: 0.8s all;

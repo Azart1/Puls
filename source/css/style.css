@@ -391,6 +391,20 @@ input[type=radio].visually-hidden {
     margin-top: 20px;
   }
 }
+.advantages__icon_animated {
+  -webkit-animation-name: heartbeat;
+          animation-name: heartbeat;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.advantages__icon_animated:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
 .advantages__item-title {
   font-size: 18px;
   line-height: 29px;
@@ -471,6 +485,15 @@ input[type=radio].visually-hidden {
     width: 100%;
     margin-top: 20px;
   }
+}
+.consult .error {
+  border: 1px solid #C70101;
+  margin-bottom: 13px;
+}
+.consult label.error {
+  border: none;
+  margin-top: 10px;
+  color: #FFFFFF;
 }
 
 .form__form-group {
@@ -1008,6 +1031,11 @@ input[type=radio].visually-hidden {
   margin: 0 auto;
   margin-top: 36px;
 }
+.contacts__iframe {
+  width: 100%;
+  height: 630px;
+  border: none;
+}
 .contacts__img:hover {
   transition: 0.8s all;
   transform: rotateX(360deg);
@@ -1021,14 +1049,14 @@ input[type=radio].visually-hidden {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: rgba(13, 13, 13, 0.6);
+  background-color: #0d0d0d;
   top: 0;
   display: none;
 }
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 57%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 380px;
@@ -1065,10 +1093,54 @@ input[type=radio].visually-hidden {
   width: 380px;
   min-height: 140px;
 }
+.modal .error {
+  border: 1px solid #C70101;
+  margin-bottom: 13px;
+}
+.modal label.error {
+  border: none;
+  margin-top: 10px;
+}
 
 #consult,
 #order,
 #thanks {
   display: none;
+}
+
+.pageup {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  height: 40px;
+  width: 40px;
+}
+.pageup img {
+  width: 100%;
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 /*# sourceMappingURL=style.css.map */

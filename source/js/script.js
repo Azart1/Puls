@@ -70,4 +70,62 @@ $(document).ready(function(){
         $('.overlay, #order').fadeIn('slow');
       })
     })
+
+    function valideForms(form) {      
+    $(form).validate({
+      rules: {
+        name:"required",
+        number:"required",
+        email:{
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        name: "Пожалуйста введите свое имя",
+        number: "Пожалуйста введите свой номер телефона",
+        email: {
+          required: "Пожалуйста введите свой e-mail адрес",
+          email: "Ваш e-mail адрес должен быть в формате name@domain.com"
+        }
+      }
+    });
+    }
+    valideForms('#consult form');
+    valideForms('#order form');
+    valideForms('#consultation-form');
+/*
+    $('form').submit(function(e) {
+      e.preventDefault();
+      $.ajax({
+          type: "POST",
+          url: "mailer/smart.php",
+          data: $(this).serialize()
+      }).done(function() {
+          $(this).find("input").val("");
+          $('#consult, #order').fadeOut();
+          $('.overlay, #thanks').fadeIn('slow');
+
+          $('form').trigger('reset');
+      });
+      return false;
+  });*/
+
+
+  // smooth scroll and pageup
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 1400) {
+        $('.pageup').fadeIn();
+    } else {
+        $('.pageup').fadeOut();
+    }
   });
+
+  $("a[href=#up]").click(function(){
+      const _href = $(this).attr("href");
+      $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+      return false;
+  });
+  });
+   
+      
